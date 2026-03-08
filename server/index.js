@@ -33,7 +33,7 @@ app.get('/api/health', (req, res) => {
 });
 
 // Catch-all to serve React app for client-side routing
-app.get('*', (req, res) => {
+app.get('*splat', (req, res) => {
   res.sendFile(path.join(distPath, 'index.html'));
 });
 
