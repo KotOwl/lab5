@@ -11,6 +11,10 @@ const firebaseConfig = {
   appId: import.meta.env.VITE_FIREBASE_APP_ID
 };
 
+if (!firebaseConfig.apiKey) {
+  console.error("Firebase API Key is missing. Check your environment variables!");
+}
+
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
