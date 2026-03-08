@@ -8,6 +8,7 @@
         "build-client": "npm run build --prefix client",
         "start": "npm start --prefix server",
         "build": "npm run build-client",
+        "postinstall": "npm run install-all",
         "render-postinstall": "npm run install-all && npm run build-client"
     },
     "keywords": [],
